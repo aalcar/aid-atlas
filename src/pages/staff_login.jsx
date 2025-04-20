@@ -1,9 +1,9 @@
 import React from "react";
-import NAMILogo from "./NAMI_logo.jpg";
+import NAMILogo from "../assets/NAMI_logo.jpg";
 
 export default function StaffLogin() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center">
       <div style={{background: '#FCFDFD', display: 'flex', flexDirection: 'column', alignItems: 'center', width: '400px', padding: '100px', paddingLeft: '470px', paddingRight: '470px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', fontFamily: 'Helvetica, sans-serif', borderRadius: '12px', margin: '40px'}}>
         {/* Logo */}
         <img

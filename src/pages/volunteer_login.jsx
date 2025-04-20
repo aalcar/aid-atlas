@@ -1,5 +1,5 @@
 import React from "react";
-import NAMILogo from "./NAMI_logo.jpg";
+import NAMILogo from "../assets/NAMI_logo.jpg";
 
 export default function VolunteerLogin() {
   return (

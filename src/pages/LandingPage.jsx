@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import NAMILogo from "./NAMI_logo.jpg";
+import NAMILogo from "../assets/NAMI_logo.jpg";
 
 export default function LandingPage() {
   const navigate = useNavigate();
