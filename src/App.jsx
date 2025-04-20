@@ -5,6 +5,7 @@ import VolunteerLogin from "./pages/volunteer_login";
 import StaffLogin from "./pages/staff_login";
 import AdminDashboard from "./pages/AdminDashboard";
 import ApplicationPage from "./pages/ApplicationPage";
+import ThankYouPage from "./pages/ThankYou";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/staff_login" element={<StaffLogin />} />
           <Route path="/coordinator" element={<AdminDashboard />} />
           <Route path="/application" element={<ApplicationPage />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
         </Routes>
       </main>
     </Router>
