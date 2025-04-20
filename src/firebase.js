@@ -3,7 +3,7 @@ import { getFirestore } from "firebase/firestore"
 
 // firebase configuration!
 const firebaseConfig = {
-  apiKey: "SIKE",
+  apiKey: "AIzaSyDh18IKbdmSk2ykCKzCTss7NndOZf8dZeQ",
   authDomain: "volunteer-portal-747ad.firebaseapp.com",
   projectId: "volunteer-portal-747ad",
   storageBucket: "volunteer-portal-747ad.firebasestorage.app",
