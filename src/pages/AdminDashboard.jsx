@@ -27,7 +27,10 @@ function AdminDashboard() {
             <ul>
                 {applications.map((app) => (
                     <li key={app.id}>
-                        <strong>{app.name}</strong> | {app.email} | {app.role}
+                        <strong>{app.first_name} {app.last_name}</strong> | {app.email} | {app.phone} | {app.address}, {app.city}, {app.state} {app.zip_code}
+                        {app.previous_classes}
+                        Lived Experience: {app.lived_experience} | One Year Commitment: {app.one_year_commitment}
+                        Lived Opportunities: {app.lived_opportunities} | General Opportunities: {app.general_opportunities}
                     </li>
                 ))}
             </ul>
