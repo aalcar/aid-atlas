@@ -1,5 +1,6 @@
 import React from "react";
 import NAMILogo from "../assets/NAMI_logo.jpg";
+import { Link } from "react-router-dom";
 
 export default function VolunteerLogin() {
   return (
@@ -82,7 +83,9 @@ export default function VolunteerLogin() {
         <div className="text-sm mt-6 space-y-1">
           <p>
             Don't have an account?{" "}
-            <a href="#" style={{ color: '#0760B3', textDecoration: 'underline' }}> Apply to be a Volunteer </a>
+            <Link to="/application" style={{ color: '#0760B3', textDecoration: 'underline' }}>
+              Apply to be a Volunteer
+            </Link>          
           </p>
           <p>
             Are you a staff member?{" "}
