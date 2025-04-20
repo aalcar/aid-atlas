@@ -29,7 +29,9 @@ function AdminDashboard() {
                     <li key={app.id}>
                         <strong>{app.first_name} {app.last_name}</strong> | {app.email} | {app.phone} | {app.address}, {app.city}, {app.state} {app.zip_code}
                         {app.previous_classes}
+                        <br></br>
                         Lived Experience: {app.lived_experience} | One Year Commitment: {app.one_year_commitment}
+                        <br></br>
                         Lived Opportunities: {app.lived_opportunities} | General Opportunities: {app.general_opportunities}
                     </li>
                 ))}
