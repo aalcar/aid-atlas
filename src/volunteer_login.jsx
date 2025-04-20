@@ -1,16 +1,15 @@
 import React from "react";
-import NAMILogo from "./NAMI_logo.jpg"; // Your local logo
+import NAMILogo from "./NAMI_logo.jpg";
 
 export default function VolunteerLogin() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      {/* Big outer card / container */}
-      <div style={{background: '#FCFDFD', display: 'flex', flexDirection: 'column', alignItems: 'center', width: '400px', padding: '100px', paddingLeft: '470px', paddingRight: '470px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', fontFamily: 'Helvetica, sans-serif', borderRadius: '12px', margin: '50px'}}>
+      <div style={{background: '#FCFDFD', display: 'flex', flexDirection: 'column', alignItems: 'center', width: '400px', padding: '100px', paddingLeft: '470px', paddingRight: '470px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', fontFamily: 'Helvetica, sans-serif', borderRadius: '12px', margin: '40px'}}>
         {/* Logo */}
         <img
           src={NAMILogo}
           alt="NAMI Logo"
-          style={{ maxWidth: '50%', maxHeight: '50%' }} // Adjust these values as needed
+          style={{ maxWidth: '50%', maxHeight: '50%' }}
         />
 
         {/* Welcome Title */}
@@ -56,10 +55,28 @@ export default function VolunteerLogin() {
       }}
     />
   </div>
-
-  {/* Login button stays as you had it */}
+  
+  <button
+    type="submit"
+    style={{
+      width: '100%',
+      padding: '12px',
+      backgroundColor: '#0760B3',
+      color: 'white',
+      fontWeight: 'bold',
+      border: 'none',
+      borderRadius: '8px',
+      marginTop: '10px',
+      fontSize: '16px',
+      cursor: 'pointer',
+      transition: 'background-color 0.3s',
+    }}
+    onMouseOver={(e) => (e.target.style.backgroundColor = '#054A91')}
+    onMouseOut={(e) => (e.target.style.backgroundColor = '#0760B3')}
+  >
+    Log In
+  </button>
 </form>
-
 
         {/* Links */}
         <div className="text-sm mt-6 space-y-1">
@@ -69,7 +86,7 @@ export default function VolunteerLogin() {
           </p>
           <p>
             Are you a staff member?{" "}
-            <a href="#" style={{ color: '#0760B3', textDecoration: 'underline' }}> Apply to be a Volunteer </a>
+            <a href="#" style={{ color: '#0760B3', textDecoration: 'underline' }}> Access the admin portal </a>
           </p>
         </div>
 
