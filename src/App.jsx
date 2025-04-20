@@ -6,7 +6,6 @@ import StaffLogin from "./pages/staff_login";
 import AdminDashboard from "./pages/AdminDashboard";
 import ApplicationPage from "./pages/ApplicationPage";
 import CoordinatorHomePage from "./pages/CoordinatorHomePage";
-import ThankYouPage from "./pages/ThankYou";
 
 const App = () => {
   return (
@@ -18,8 +17,7 @@ const App = () => {
           <Route path="/staff_login" element={<StaffLogin />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/coordinator-homepage" element={<CoordinatorHomePage />} />
-          <Route path="/apply" element={<ApplicationPage />} />
-          <Route path="/thank-you" element={<ThankYouPage />} />
+          <Route path="/application" element={<ApplicationPage />} />
         </Routes>
       </main>
     </Router>
