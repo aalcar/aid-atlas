@@ -38,7 +38,7 @@ export default function StaffLogin() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            navigate("/coordinator-homepage");
+            navigate("/coordinator");
           }}
           style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '20px' }}
         >

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import db from '../firebase.js';
 import { useNavigate } from 'react-router-dom';
+import NAMILogo from '../assets/NAMI_logo.jpg';
 
 const CLASS_OPTIONS = [
     "Peer to Peer Class",
@@ -97,6 +98,33 @@ function ApplicationPage() {
         boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
         fontFamily: 'Helvetica, sans-serif'
     }}>
+        <header style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                backgroundColor: "#ffffff",
+                padding: "16px 32px",
+                boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)"
+              }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+                  <img src={NAMILogo} alt="NAMI Logo" style={{ maxWidth: "100px", maxHeight: "100px" }} />
+                </div>
+        
+    
+            <button
+            onClick={() => navigate('../')}
+            style={{
+              padding: "8px 20px",
+              backgroundColor: "#3174ad",
+              color: "white",
+              fontWeight: "bold",
+              border: "none",
+              borderRadius: "6px",
+              cursor: "pointer"
+            }}>
+              Exit
+            </button>
+        </header>
       <form onSubmit={handleSubmit}>
       <h1>Volunteer Interest Form</h1>
     
